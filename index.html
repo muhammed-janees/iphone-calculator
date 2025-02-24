@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+      <input class="result" id="message">
+      <div class="contains">
+        <button class="btn" onclick="calculate('1');">1</button>
+        <button class="btn" onclick="calculate('2');">2</button>
+        <button class="btn" onclick="calculate('3');">3</button>
+        <button class="btns" onclick="calculate('+');">+</button>
+        <button class="btn" onclick="calculate('4');">4</button>
+        <button class="btn" onclick="calculate('5');">5</button>
+        <button class="btn" onclick="calculate('6');">6</button>
+        <button class="btns" onclick="calculate('-');">-</button>
+        <button class="btn" onclick="calculate('7');">7</button>
+        <button class="btn" onclick="calculate('8');">8</button>
+        <button class="btn" onclick="calculate('9');">9</button>
+        <button class="btns" onclick="calculate('*');">*</button>
+        <button class="btn" onclick="calculate('0');">0</button>
+        <button class="btn" onclick="calculate('.');">.</button>
+
+        <button class="btn" onclick="
+        calculation=eval(calculation)
+        document.getElementById('message').value = calculation;
+        localStorage.setItem('calculation',calculation);
+        ">=</button>
+
+        <button class="btns" onclick="calculate('/');">/</button>
+
+        <button class="btn" onclick="
+        calculation='';
+        document.getElementById('message').value = calculation;
+        localStorage.setItem('calculation',calculation);
+        ">Clear</button>
+
+      </div>
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
