@@ -11,7 +11,7 @@
   <div class="container">
       <input class="result" id="message">
       <div class="contains">
-        <button class="btn" onclick="calculate('1');">1</button>
+        <button class="btn one" onclick="calculate('1');">1</button>
         <button class="btn" onclick="calculate('2');">2</button>
         <button class="btn" onclick="calculate('3');">3</button>
         <button class="btns" onclick="calculate('+');">+</button>
@@ -26,19 +26,11 @@
         <button class="btn" onclick="calculate('0');">0</button>
         <button class="btn" onclick="calculate('.');">.</button>
 
-        <button class="btn" onclick="
-        calculation=eval(calculation)
-        document.getElementById('message').value = calculation;
-        localStorage.setItem('calculation',calculation);
-        ">=</button>
+        <button class="btn" onclick="totalCalc()">=</button>
 
         <button class="btns" onclick="calculate('/');">/</button>
 
-        <button class="btn" onclick="
-        calculation='';
-        document.getElementById('message').value = calculation;
-        localStorage.setItem('calculation',calculation);
-        ">Clear</button>
+        <button class="btn" onclick="clearCalc()">Clear</button>
 
       </div>
 
